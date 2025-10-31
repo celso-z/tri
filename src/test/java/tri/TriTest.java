@@ -20,7 +20,9 @@ class TriTest {
 	 */
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "1,2,2",
+        //DADOS LIMITE
         "5,7,5"
     })
     void testClasseValida1(Integer lado1, Integer lado2, Integer lado3) {
@@ -29,7 +31,9 @@ class TriTest {
 	}
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "2,2,2",
+        //DADOS LIMITE
         "3,3,3"
     })
     void testClasseValida2(Integer lado1, Integer lado2, Integer lado3) {
@@ -38,7 +42,9 @@ class TriTest {
 	}
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "5,6,7",
+        //DADOS LIMITE
         "7,8,9"
     })
     void testClasseValida3(Integer lado1, Integer lado2, Integer lado3) {
@@ -48,7 +54,9 @@ class TriTest {
 	
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "1,2,9",
+        //DADOS LIMITE
         "3,4,7"
     })
     void testClasseInvalida1(Integer lado1, Integer lado2, Integer lado3) {
@@ -58,7 +66,9 @@ class TriTest {
 	}
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "1,9,2",
+        //DADOS LIMITE
         "3,7,4"
     })
     void testClasseInvalida2(Integer lado1, Integer lado2, Integer lado3) {
@@ -68,7 +78,9 @@ class TriTest {
 	}
 	@ParameterizedTest
     @CsvSource({
+    	//DADOS PCE
         "9,1,2",
+        //DADOS LIMITE
         "7,3,4"
     })
     void testClasseInvalida3(Integer lado1, Integer lado2, Integer lado3) {
